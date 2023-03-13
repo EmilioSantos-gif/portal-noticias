@@ -25,7 +25,11 @@ export default function HomePage({ news }) {
 }
 
 export async function getStaticProps(){
-  const res = await fetch(`${API_URL}/api/news`);
+  //const res = await fetch(`${API_URL}/api/news`);
+  //const res = await fetch(`${API_URL}/api/sports?populate=*`);
+  //const res = await fetch('http://localhost:1337/api/sports?populate=*');
+  const res = await fetch('http://localhost:1337/api/sports');
+
   const news = await res.json();
 
   return {
@@ -33,3 +37,13 @@ export async function getStaticProps(){
     revalidate: 1
   };
 }
+/*
+export async function getServerSideProps({ query: { slug }}){
+
+  const res = await fetch('http://localhost:1337/api/sports');
+  const singleNews = await res.json();
+  return {
+    props: { news: news.slice(0,5) },
+    revalidate: 1
+  };
+}*/

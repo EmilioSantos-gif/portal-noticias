@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -40,4 +39,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 =======
 # portal-noticias
 Este proyecto es un portal de noticias hecho en Next.js
->>>>>>> b776bc7d1798975064d653c575314f96d67d6555

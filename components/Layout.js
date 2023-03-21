@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 
 export default function Layout({title, keywords, description, children}){
     const router = useRouter();
-    console.log("router", router);
     return (
         <div>
             <Head>

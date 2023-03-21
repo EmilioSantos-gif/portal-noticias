@@ -3,4 +3,23 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+//module.exports = nextConfig
+
+module.exports = {
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
+}
+/*
+module.exports = {
+  images:{
+    remotePatterns: [
+      {
+        protocol:'http',
+        hostname: 'res.cloudinary.com',
+        //port: '1337'
+      }
+    ]
+  }
+}
+*/

@@ -1,6 +1,7 @@
 import styles from "@/styles/NewsItem.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import moment from "moment";
 
 export default function NewsItem(props) {
 
@@ -20,7 +21,7 @@ export default function NewsItem(props) {
       </div>
         <div className={styles.info}>
             <span>
-                {news.date} {news.time}
+                {moment(news.date).format("DD-MM-yyyy")} {news.time}
             </span>
             <h3>{news.name}</h3>
         </div>

@@ -15,7 +15,10 @@ export default function Header() {
                     <Link href="/news">Noticias</Link>
                 </li>
                 <li>
-                    <Link href="/about">Sobre nostros</Link>
+                    <Link href="/news/add">Añadir Noticia</Link>
+                </li>
+                <li>
+                    <Link href="/about">Sobre Nosotros</Link>
                 </li>
             </ul>
         </nav>

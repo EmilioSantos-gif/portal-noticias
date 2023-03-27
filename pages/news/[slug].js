@@ -6,6 +6,7 @@ import Link from "next/link";
 import styles from "@/styles/News.module.css"
 import fetchApi from "../api/news";
 import { use, useEffect, useState } from 'react'
+import moment from 'moment'
 
 export default function SingleNews() {
     
@@ -36,7 +37,7 @@ export default function SingleNews() {
   return (
     <Layout>
         <div className={styles.news}>
-            <span>{news && news.date} {news && news.time}</span>
+            <span>{news && moment(news.date).format("DD-MM-yyyy")} {news && news.time}</span>
             <h1>{news && news.name}</h1>
             {news && news.image && (
                 <div className={styles.image}>
